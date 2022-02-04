@@ -3,3 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title} friend!
+  ul
+    each val in messages.length ? messages : ['There are no messages']
+      li= message.text
