@@ -1,12 +1,15 @@
 extends layout
 
 block content
-  h1= Message Form
+  h1 Message Form
   p Add a message
   form(method='POST' action='/new')
     div
         label(for="name") User:
-        input(type="text" id="name" name="user_name")
+        input(type="text" id="name" name="messageUser")
+    div
+        label(for="message") Message:
+        input(type="text" id="message" name="messageText")
     div 
         button(type="submit") Send your message
   
