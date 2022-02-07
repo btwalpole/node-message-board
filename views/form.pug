@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= Message Form
+  p Add a message
+  form(method='POST' action='/new')
+    div
+        label(for="name") User:
+        input(type="text" id="name" name="user_name")
+    div 
+        button(type="submit") Send your message
+  
+    
